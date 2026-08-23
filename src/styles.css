@@ -1,0 +1,167 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url(../images/background.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Стилизация кнопок */
+header nav .nav-btn {
+    background: rgba(10, 10, 15, 0.85);
+    color: #00f3ff;
+    border: 2px solid #00f3ff;
+    padding: 8px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 243, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+/* Эффект при наведении */
+header nav .nav-btn:hover {
+    color: #fff;
+    background: #ff007f;
+    border-color: #ff007f;
+    box-shadow: 0 0 15px #ff007f, 0 0 25px rgba(255, 0, 127, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Эффект при нажатии */
+header nav .nav-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 0 5px #ff007f;
+}
+
+.content {
+    max-width: 800px; 
+    width: 90%;
+    margin: 50px auto; 
+    background-color: rgba(0, 0, 0, 0.85); 
+    color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* Заголовок страницы */
+.main-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #00f3ff;
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.6);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Блок цитаты */
+.quote-box {
+    margin: 0 0 35px 0;
+    padding: 15px 20px;
+    border-left: 4px solid #ff007f;
+    background: rgba(255, 0, 127, 0.08);
+    border-radius: 0 4px 4px 0;
+}
+
+.quote-text {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.quote-author {
+    display: block;
+    font-size: 0.85rem;
+    color: #ff007f;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Сетка для графика и локации */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: rgba(10, 10, 15, 0.6);
+    padding: 20px;
+    border: 1px solid rgba(0, 243, 255, 0.2);
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: rgba(0, 243, 255, 0.6);
+}
+
+.card-title {
+    margin-bottom: 15px;
+    color: #00f3ff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.5);
+}
+
+/* График работы */
+.schedule-list {
+    list-style: none;
+    padding: 0;
+}
+
+.schedule-list li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+.schedule-list span {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Локация */
+.location-text {
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+/* Акцентный текст */
+small {
+    color: #ff007f;
+    font-size: 0.8em;
+}
